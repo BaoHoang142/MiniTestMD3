@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#body {
+    background-color: rgb(91,186,216);
+    width: 100vw;
+    height: 720px;
+    position: relative;
+    #formTable {
+        width: 500px ;
+        height:500px;
+        background-color: #fff;
+        margin-top: 30px;
+        margin-left: 470px;
+        margin-right: 470px;
+        margin-bottom: 30px;
+        position: absolute;
+        box-shadow: -1px -2px 20px 0px rgba(0,0,0,0.4);
+        border-radius: 20px;
+        .mainTable{
+            float: right;
+            width: 450px;
+            height: 550px;
+            margin: 30px 25px ;
+            h1 {
+                font-weight: 800;
+            }
+            // text-align: center;
+            .formAdd{
+                margin-top: 20px;
+            }
+            
+            .formRender{
+                width: 450px;
+                float: right;
+                ul {
+                    text-decoration: none;
+                    list-style: none;
+                    width: 400px;
+                    
+                    .formRender__list {
+                        width: 450px;
+                        height: 50px;
+                        margin-left: -30px;
+                        background-color: rgb(242,242,242);
+                        display: flex;
+                        justify-content: space-between;
+                        .formRender__list--text{
+                            padding: 10px;
+                        }
+
+                        .formRender__list--button {
+                            display: flex;
+                            gap: 10px;
+                            display: none ;
+                        }    
+                    }
+                    .formRender__list:hover {
+                        .formRender__list--button{
+                            display: flex;
+                            gap: 20px;
+                            display: block;
+                            .formRender__list--button--edit{
+                                font-weight: 900;
+                                width: 50px;
+                                height: 50px;
+                                border: none;   
+                            }
+                            .edit1 {
+                                background-color: rgb(91,186,216);
+                            }
+                            .edit2 {
+                                background-color: rgb(228,77,66);
+                            }
+                        }
+                    }
+                }
+            }
+            .formFooter{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 450px;
+                height: 50px;
+                margin-top: 300px;
+                // background-color: rgb(242,242,242);
+                // opacity: 0.9;
+
+                p {
+                   padding: 10px;
+                   padding-top: 23px !important;
+
+                }
+            }
+        }
+        
+    }
+  
+}
